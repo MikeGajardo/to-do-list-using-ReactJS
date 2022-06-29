@@ -5,8 +5,8 @@ export const ToDoItem = ({ todos, completeTodo, removeTodo }) => {
   return todos.map((todo, index) => (
 	<div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
 		<div></div> 
-		<div className="todo-text" key={todo.id} onClick={() => completeTodo(todo.id)}>
-			{todo.text}
+		<div className="todo-text " key={todo.id} onClick={() => completeTodo(todo.id)}>
+			{todo.text} 
 		</div>
 		<div className="close">
 			<svg onClick={() => removeTodo(todo.id)} className='delete-icon' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x-square" viewBox="0 0 16 16">

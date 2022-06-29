@@ -28,7 +28,7 @@ export const ToDoList = () => {
   
 	return (
 	<div className="todo-container">
-		<h1>Daily To-Do's</h1>
+		<h1>Daily To-Do'sVerse</h1>
 		<ToDoForm onSubmit={addTodo} />
 		<ToDoItem 
 		todos={todos}
